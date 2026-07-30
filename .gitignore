@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS / misc
+Thumbs.db
+
+# Personal résumé files — keep them off the public site
+Xinyi_Xie_CV.docx
+Xinyi_Xie_CV_RECOVERED.docx

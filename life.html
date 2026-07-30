@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life — Xinyi Xie</title>
+    <meta name="description" content="Life in photos — Xinyi Xie (Sherry)." />
+    <link rel="icon" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand-group">
+          <a class="brand" href="index.html">Sherry</a>
+          <button class="theme-toggle" type="button" aria-label="Toggle day / night" title="Day / night">🌙</button>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="cv.html">CV</a>
+          <a href="life.html">Life</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Life</h1>
+        <p class="profile__loc">A few moments off the clock.</p>
+
+        <!-- Slideshow -->
+        <div class="slideshow" id="life-slideshow">
+          <div id="life-slides">
+            <p class="loading" style="padding: 2rem; text-align: center">
+              Loading photos…
+            </p>
+          </div>
+          <button
+            class="slideshow__arrow slideshow__arrow--prev"
+            id="life-prev"
+            aria-label="Previous photo"
+          >
+            ‹
+          </button>
+          <button
+            class="slideshow__arrow slideshow__arrow--next"
+            id="life-next"
+            aria-label="Next photo"
+          >
+            ›
+          </button>
+        </div>
+        <div class="slideshow__dots" id="life-dots"></div>
+
+        <hr />
+
+        <!-- Grid of all photos -->
+        <div class="life-grid" id="life-grid"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© <span id="year">2026</span> Sherry</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/life.js"></script>
+  </body>
+</html>

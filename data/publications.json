@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Where does the Fault Lie? Traceable Repair for Coding Agents Beyond Pass/Fail",
+    "authors": ["Yi Xie", "Liangliang Cao", "Xinyi Xie", "Chongjie Zhang", "Bo Liu", "Jerzy W Rozenblit"],
+    "venue": "Under review at NeurIPS 2027",
+    "hideAuthors": true,
+    "selected": true,
+    "links": {}
+  },
+  {
+    "title": "Emotion2Skill: Model-Internal Emotion Signals for Adaptive Skill Selection and Evolution",
+    "authors": ["Bohan Lin", "Hejia Geng", "Xinyi Xie", "Heng Zhou", "Qinghua Xing", "Bo Liu", "Chen Zhang", "Yudong Zhang"],
+    "venue": "Under review at AAAI 2027",
+    "hideAuthors": true,
+    "selected": true,
+    "links": {}
+  },
+  {
+    "title": "Planning What to Know: Benchmarking Information Acquisition Strategies for Biomedical Agents",
+    "authors": [],
+    "venue": "Accepted by <a href=\"https://ai-scientist-workshop.github.io\" target=\"_blank\" rel=\"noopener\">Microsoft AI Scientist Summer Workshop</a>",
+    "selected": true,
+    "links": {}
+  },
+  {
+    "title": "TradingRL: Auditing Financial-Reward Post-Training for LLM Trading Agents",
+    "authors": ["Ziyan Chen", "Mulei Zhang", "Hejia Geng", "Zhenbang Jiao", "Junwei Zhou", "Xinyi Xie"],
+    "venue": "Under review at AAAI 2027",
+    "hideAuthors": true,
+    "selected": true,
+    "links": {}
+  }
+]
