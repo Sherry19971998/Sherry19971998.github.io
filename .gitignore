@@ -12,3 +12,8 @@ Thumbs.db
 # Personal résumé files — keep them off the public site
 Xinyi_Xie_CV.docx
 Xinyi_Xie_CV_RECOVERED.docx
+
+# WPS/Office temp & lock files
+.~*
+~$*
+*.wps
