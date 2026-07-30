@@ -35,16 +35,15 @@
         // blurred fill background (same photo) so portraits have no empty bars
         var bg = document.createElement("div");
         bg.className = "slide__bg";
-        bg.style.backgroundImage = 'url("' + p.src + '")';
         slide.appendChild(bg);
         var img = document.createElement("img");
         img.className = "slide__img";
-        img.src = p.src;
         img.alt = p.caption || "Photo";
-        img.loading = "lazy";
         img.onerror = function () {
           this.style.display = "none";
         };
+        // lazy: only load the first slide now; the rest load on demand
+        img.dataset.src = p.src;
         slide.appendChild(img);
         if (p.caption) {
           var cap = document.createElement("div");
@@ -115,12 +114,26 @@
       var current = 0;
       var timer = null;
 
+      // load a slide's image + blurred bg only when first needed
+      function loadSlide(i) {
+        var s = slides[i];
+        var img = s.querySelector(".slide__img");
+        if (img && img.dataset.src) {
+          img.src = img.dataset.src;
+          var bg = s.querySelector(".slide__bg");
+          if (bg) bg.style.backgroundImage = 'url("' + img.dataset.src + '")';
+          img.removeAttribute("data-src");
+        }
+      }
+
       function go(n) {
         slides[current].classList.remove("is-active");
         dots[current].classList.remove("is-active");
         current = (n + slides.length) % slides.length;
         slides[current].classList.add("is-active");
         dots[current].classList.add("is-active");
+        loadSlide(current);
+        loadSlide((current + 1) % slides.length); // preload the next one
       }
       function next() {
         go(current + 1);
@@ -146,6 +159,8 @@
           restart();
         });
 
+      loadSlide(0); // first photo loads immediately
+      loadSlide(1 % slides.length);
       start();
     })
     .catch(function () {
