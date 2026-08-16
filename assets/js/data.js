@@ -12,6 +12,22 @@
 
   var MY_NAME = "Xinyi Xie"; // highlighted in author lists
 
+  // Icons for publication resource links (paper / code / project).
+  var ICON_DOC =
+    '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm7 1.6V9h5.4L13 3.6ZM8 12.5h8V14H8v-1.5Zm0 3.1h8v1.5H8v-1.5Z"/></svg>';
+  var ICON_GH =
+    '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>';
+  var ICON_WEB =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>';
+  var LINK_ICONS = {
+    paper: ICON_DOC, pdf: ICON_DOC, arxiv: ICON_DOC, preprint: ICON_DOC,
+    code: ICON_GH, github: ICON_GH,
+    website: ICON_WEB, project: ICON_WEB, page: ICON_WEB, demo: ICON_WEB,
+  };
+  function linkIcon(label) {
+    return LINK_ICONS[String(label).toLowerCase()] || null;
+  }
+
   function el(tag, className, html) {
     var node = document.createElement(tag);
     if (className) node.className = className;
@@ -111,10 +127,15 @@
     if (p.links && Object.keys(p.links).length) {
       var links = el("div", "pub__links");
       Object.keys(p.links).forEach(function (label) {
-        var a = el("a", null, escapeHTML(label));
+        var a = el("a", "pub__link");
         a.href = p.links[label];
         a.target = "_blank";
         a.rel = "noopener";
+        a.title = label;
+        a.setAttribute("aria-label", label);
+        var icon = linkIcon(label);
+        if (icon) a.innerHTML = icon;
+        else a.textContent = label;
         links.appendChild(a);
       });
       node.appendChild(links);
