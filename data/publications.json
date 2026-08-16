@@ -13,7 +13,7 @@
     "venue": "Under review at AAAI 2027",
     "hideAuthors": true,
     "selected": true,
-    "links": {}
+    "links": { "arXiv": "https://arxiv.org/pdf/2608.09248" }
   },
   {
     "title": "Planning What to Know: Benchmarking Information Acquisition Strategies for Biomedical Agents",
