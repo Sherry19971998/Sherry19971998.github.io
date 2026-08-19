@@ -1,10 +1,9 @@
-# Xinyi Xie — personal website
+# personal website
 
 A minimal two-page academic site (**Home** + **CV**), built with plain HTML,
 CSS, and JavaScript. No build step, no framework. Content for News and
 Publications is data-driven from JSON. Design: sans-serif, single-column, soft
-rose accent (inspired by [kevinz-01.github.io](https://kevinz-01.github.io),
-feminine palette borrowed from al-folio pink themes).
+rose accent.
 
 ## Structure
 
