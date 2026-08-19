@@ -20,7 +20,7 @@ sherry-website/
 ├── data/
 │   ├── news.json
 │   └── publications.json
-├── assets/Xinyi_Xie_CV.pdf   # (add your PDF here)
+├── assets/CV.pdf   # (add your PDF here)
 ├── CNAME                 # custom domain (edit when ready)
 └── README.md
 ```
@@ -31,7 +31,7 @@ sherry-website/
   (plain) or `html` (may contain links). Newest first.
 - **Publications** — edit `data/publications.json`. Set `"selected": true` to
   show an entry in the Home "Selected Publications" section; the CV shows all.
-  Your name (`Xinyi Xie`) is auto-highlighted in author lists. Optional
+  Your name (`Sherry Xie`) is auto-highlighted in author lists. Optional
   `badge` (e.g. "Oral", "Preprint") and `links` map (label → URL).
 - **Everything else** (bio, research areas, education, awards, …) is plain HTML
   in `index.html` / `cv.html`. Search for "Placeholder" to find what to replace.
