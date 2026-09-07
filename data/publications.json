@@ -23,6 +23,13 @@
     "links": {}
   },
   {
+    "title": "A Survey on Multi-Agent Reinforcement Learning in Cybersecurity",
+    "authors": [],
+    "venue": "Under review at IEEE Transactions on Neural Networks and Learning Systems 2026",
+    "selected": true,
+    "links": {}
+  },
+  {
     "title": "TradingRL: Auditing Financial-Reward Post-Training for LLM Trading Agents",
     "authors": ["Ziyan Chen", "Mulei Zhang", "Hejia Geng", "Zhenbang Jiao", "Junwei Zhou", "Xinyi Xie"],
     "venue": "Under review at AAAI 2027",
