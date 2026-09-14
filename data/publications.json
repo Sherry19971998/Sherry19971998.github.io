@@ -8,6 +8,13 @@
     "links": {}
   },
   {
+    "title": "PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization",
+    "authors": [],
+    "venue": "",
+    "selected": true,
+    "links": { "arXiv": "https://arxiv.org/pdf/2607.07744" }
+  },
+  {
     "title": "Emotion2Skill: Model-Internal Emotion Signals for Adaptive Skill Selection and Evolution",
     "authors": ["Bohan Lin", "Hejia Geng", "Xinyi Xie", "Heng Zhou", "Qinghua Xing", "Bo Liu", "Chen Zhang", "Yudong Zhang"],
     "venue": "Under review at AAAI 2027",
