@@ -1,26 +1,37 @@
 [
   {
     "title": "Where does the Fault Lie? Traceable Repair for Coding Agents Beyond Pass/Fail",
-    "authors": ["Yi Xie", "Liangliang Cao", "Xinyi Xie", "Chongjie Zhang", "Bo Liu", "Jerzy W Rozenblit"],
+    "authors": [
+      "Yi Xie",
+      "Liangliang Cao",
+      "Xinyi Xie",
+      "Chongjie Zhang",
+      "Bo Liu",
+      "Jerzy W Rozenblit"
+    ],
     "venue": "Under review at ICLR 2027",
     "hideAuthors": true,
     "selected": true,
     "links": {}
   },
   {
-    "title": "PERFOPT-Bench: Evaluating Coding Agents on Software Performance Optimization",
-    "authors": [],
-    "venue": "Under review at NAACL 2027",
-    "selected": true,
-    "links": { "arXiv": "https://arxiv.org/pdf/2607.07744" }
-  },
-  {
     "title": "Emotion2Skill: Model-Internal Emotion Signals for Adaptive Skill Selection and Evolution",
-    "authors": ["Bohan Lin", "Hejia Geng", "Xinyi Xie", "Heng Zhou", "Qinghua Xing", "Bo Liu", "Chen Zhang", "Yudong Zhang"],
+    "authors": [
+      "Bohan Lin",
+      "Hejia Geng",
+      "Xinyi Xie",
+      "Heng Zhou",
+      "Qinghua Xing",
+      "Bo Liu",
+      "Chen Zhang",
+      "Yudong Zhang"
+    ],
     "venue": "",
     "hideAuthors": true,
     "selected": true,
-    "links": { "arXiv": "https://arxiv.org/pdf/2608.09248" }
+    "links": {
+      "arXiv": "https://arxiv.org/pdf/2608.09248"
+    }
   },
   {
     "title": "Planning What to Know: Benchmarking Information Acquisition Strategies for Biomedical Agents",
@@ -38,7 +49,14 @@
   },
   {
     "title": "TradingRL: Auditing Financial-Reward Post-Training for LLM Trading Agents",
-    "authors": ["Ziyan Chen", "Mulei Zhang", "Hejia Geng", "Zhenbang Jiao", "Junwei Zhou", "Xinyi Xie"],
+    "authors": [
+      "Ziyan Chen",
+      "Mulei Zhang",
+      "Hejia Geng",
+      "Zhenbang Jiao",
+      "Junwei Zhou",
+      "Xinyi Xie"
+    ],
     "venue": "",
     "hideAuthors": true,
     "selected": true,
